@@ -517,12 +517,7 @@ public class SpotlightView extends FrameLayout {
             mImageView.setImageDrawable(avd);
             avd.start();
         } else {
-            AnimatedVectorDrawableCompat avdc =
-                    AnimatedVectorDrawableCompat.create(activity, R.drawable.avd_spotlight_arc);
-            avdc.setColorFilter(porterDuffColorFilter);
-
-            mImageView.setImageDrawable(avdc);
-            avdc.start();
+            mImageView.setColorFilter(porterDuffColorFilter);
         }
 
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
